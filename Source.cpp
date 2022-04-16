@@ -104,6 +104,7 @@ void container::Out(ofstream& ofst) {
 	{
 		ofst << i << ": ";
 		curr->pic->Out(ofst);
+		ofst << "The picture was filmed in " << curr->pic->country << ".\n";
 		curr = curr->next;
 		i++;
 	}
